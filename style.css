@@ -26,10 +26,10 @@ h2{
  text-align: center;
 }
 
-.btn btn-primary{
+.container-1 .flex-box-container-1 .first_click{
 background-color: blue;
 }
 
-.btn btn-danger{
+..container-1 .flex-box-container-1 .second_click{
 background-color: red;
 }
