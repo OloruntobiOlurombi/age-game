@@ -26,10 +26,20 @@ h2{
  text-align: center;
 }
 
-.container-1 .flex-box-container-1 .first_click{
+.container-1 .flex-box-container-1 div:first-child{
 background-color: blue;
 }
 
-..container-1 .flex-box-container-1 .second_click{
+.container-1 .flex-box-container-1 div:last-child{
 background-color: red;
+}
+
+.container-1 .flex-box-container-1 .first_click{
+background-color: blue;
+ color: white;
+}
+
+.container-1 .flex-box-container-1 .second_click{
+background-color: red;
+ color:white;
 }
