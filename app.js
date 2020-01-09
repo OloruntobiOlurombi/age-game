@@ -13,3 +13,16 @@ function ageInDays() {
 function reset() {
  document.getElementById('ageInDays').remove();
 }
+
+// scrollbutton
+$('.scrollTo').click(function(){
+    var getElement = $(this).attr('href');
+    if($(getElement).length){
+        var getOffset = $(getElement).offset().top;
+        $('html,body').animate({
+            scrollTop: getOffset - 50
+        },500)
+
+    }
+    return false;
+})
