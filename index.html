@@ -5,28 +5,43 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <link rel="stylesheet" href="/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
  <link rel="stylesheet" href="style.css">
- <title><!--Javascript on Steroids--> Welcome</title>
+ <title>Welcome to AgeWhiz</title>
 </head>
 
 <body>
+    <div id="wrapper">
+        <h2 class="display-4 wt1">Welcome to AgeWhiz</h2>
+        <p class="lead wt2">Discover how long you have spent on Earth, in days!!</p>
+        <a href="#" class="btn">Lets get started!</a>
+    </div>
  <div class="container-1">
-  <h2>Game Alert: Your Age in Days (Birth year - Dec 31<sup>th</sup> 2019)</h2>
+  <h2 class="display-4 c1t">Game Alert: Your Age in Days (Birth year - Dec 31<sup>th</sup> 2019)</h2>
   <div class="flex-box-container-1">
    <div>
-    <button class="first_click" onclick="ageInDays()">Click me</button>
+    <button class="first_click" onclick="ageInDays()">Tell me your age</button>
    </div>
 
    <div>
-    <button class="second_click" onclick="reset()">reset</button>
+    <button class="second_click" onclick="reset()">Reset</button>
    </div>
   </div>
   <div class="flex-box-container-1">
    <div id="flex-box-result"></div>
   </div>
  </div>
- <script src="app.js"></script>
+
+ <footer class="footer">
+     <p class="lead mb-0 footer-text">Copyright 2020</p>
+     <p class="lead mb-0 footer-text">Built and maintained by Oloruntobi</p>
+     <p class="lead footer-text">Designed by Isaac Jesse</p>
+ </footer>
+
+
+
+
+ <script src="js/app.js"></script>
 </body>
 
 </html>
