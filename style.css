@@ -4,6 +4,38 @@
   scroll-behavior: smooth;
 }
 
+#wrapper{
+    animation-name: background-change;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#wrapper .btn{
+    animation-name: button-change;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes background-change{
+    0%{background: #225470; color: white;}
+    25%{background: rgb(0, 253, 114); color: black}
+    50%{background: rgb(251, 255, 0); color: black;}
+    75%{background: rgb(0, 253, 114); color: black;}
+    100%{background: #225470; color: white;}
+} 
+
+@keyframes button-change{
+    0%{background: background: #225470; color: white;}
+    25%{background: black; color: white; border: 1px solid black;}
+    50%{background: black; color: white; border: 1px solid black;}
+    75%{background: black; color: white; border: 1px solid black;}
+    100%{background: background: #225470; color: white;}
+} 
+
 #wrapper {
   height: 100vh;
   background: #225470;
@@ -18,18 +50,19 @@
 #wrapper .btn{
     padding: 10px;
     color: white;
-    border: 1px solid white;
+    border: 1px solid rgb(2, 180, 2);
     border-radius: 5px;
     text-decoration: none;
-    background: transparent;
+    background: rgb(2, 180, 2);
 }
 
+/*
 #wrapper .btn:hover{
 background: rgb(2, 180, 2);
 border: 1px solid rgb(2, 180, 2);
 transition: 1s all;
 transition: ease-in-out;
-}
+}*/
 
 #wrapper .wt1{
     font-size: 40px;

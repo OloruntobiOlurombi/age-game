@@ -6,7 +6,7 @@ function ageInDays() {
     "You are " + realAgeInDays + " days old"
   );
   var year = document.querySelector("#year");
-  year.innerHTML = "2002";
+  year.innerHTML = Date().getFullYear();
   h1.setAttribute("id", "ageInDays");
   h1.classList.add("display-4", "c1t");
   h1.appendChild(textAnswer);
