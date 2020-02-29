@@ -6,7 +6,8 @@ function ageInDays() {
     "You are " + realAgeInDays + " days old"
   );
   var year = document.querySelector("#year");
-  year.innerHTML = Date().getFullYear();
+  year.innerHTML = new Date().getFullYear();
+
   h1.setAttribute("id", "ageInDays");
   h1.classList.add("display-4", "c1t");
   h1.appendChild(textAnswer);
@@ -23,7 +24,7 @@ function reset() {
 }
 
 // scrollbutton
-$(".scrollTo").click(function() {
+(".scrollTo").click(function() {
   var getElement = $(this).attr("href");
   if ($(getElement).length) {
     var getOffset = $(getElement).offset().top;
