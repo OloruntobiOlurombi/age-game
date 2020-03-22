@@ -12,7 +12,7 @@ function ageInDays() {
   h1.classList.add("display-4", "c1t");
   h1.appendChild(textAnswer);
   document.getElementById("flex-box-result").appendChild(h1);
-  setTimeout(() => document.getElementById("ageInDays").remove(), 5000);
+  setTimeout(() => document.getElementById("ageInDays").remove(), 10000);
 }
 
 const year = document.querySelector("#year");

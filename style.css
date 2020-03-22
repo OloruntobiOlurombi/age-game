@@ -4,15 +4,20 @@
   scroll-behavior: smooth;
 }
 
-#wrapper{
+body{
+    overflow: hidden;
+}
+
+.wrapper{
     animation-name: background-change;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
+
 }
 
-#wrapper .btn{
+.wrapper .btn{
     animation-name: button-change;
     animation-duration: 20s;
     animation-iteration-count: infinite;
@@ -29,14 +34,14 @@
 } 
 
 @keyframes button-change{
-    0%{background: background: #225470; color: white;}
+    0%{background: rgb(2, 180, 2); color: white;}
     25%{background: black; color: white; border: 1px solid black;}
     50%{background: black; color: white; border: 1px solid black;}
     75%{background: black; color: white; border: 1px solid black;}
-    100%{background: background: #225470; color: white;}
+    100%{background: rgb(2, 180, 2); color: white;}
 } 
 
-#wrapper {
+.wrapper {
   height: 100vh;
   background: #225470;
   color: white;
@@ -47,7 +52,7 @@
   justify-content: center;
 }
 
-#wrapper .btn{
+.wrapper .btn{
     padding: 10px;
     color: white;
     border: 1px solid rgb(2, 180, 2);
@@ -64,11 +69,11 @@ transition: 1s all;
 transition: ease-in-out;
 }*/
 
-#wrapper .wt1{
+.wrapper .wt1{
     font-size: 40px;
 }
 
-#wrapper .wt2{
+.wrapper .wt2{
     font-size: 18px;
 }
 
@@ -122,6 +127,27 @@ transition: ease-in-out;
     justify-content: center;
 }
 
+.btn-top{
+    position: absolute;
+    top: 155vh;
+    right: 20px;
+    padding: 10px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-decoration: none;
+    background: transparent;
+}
+
+.btn-top:hover{
+    padding: 10px;
+    color: white;
+    border: 1px solid rgb(2, 180, 2);
+
+    text-decoration: none;
+    background: rgb(2, 180, 2);
+}
+
 .footer{
     background: #225470;
     color: white;
@@ -137,16 +163,16 @@ transition: ease-in-out;
 }
 
 @media (max-width: 560px){
-    #wrapper .wt1{
+    .wrapper .wt1{
         font-size: 30px;
     }
     
-    #wrapper .wt2{
+    .wrapper .wt2{
         font-size: 15px;
     }
     
     .container-1 {
-        height: 40vh;
+        height: 80vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -154,7 +180,6 @@ transition: ease-in-out;
         text-align: center;
       width: 80%;
       padding-top: 50px;
-      margin: 50px auto;
     }
     .c1t{
         font-size: 22px;
@@ -177,6 +202,11 @@ transition: ease-in-out;
         text-decoration: none;
         background: transparent;
     }
+    .btn-top{
+        position: absolute;
+        top: 182vh;
+        right: 20px;
+    }
 }
 
 @media (max-height: 500px){
@@ -193,6 +223,11 @@ transition: ease-in-out;
     }
     .c1t{
         font-size: 20px;
+    }
+    .btn-top{
+        position: absolute;
+        top: 151vh;
+        right: 20px;
     }
 }
 
