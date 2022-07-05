@@ -3,12 +3,12 @@ version: 2.1
 jobs: 
   save_hello_world_output: 
     docker:
-      - image: cimg/base:stable
+      - image: circleci/node:13.8.0
     steps: 
       - checkout 
       - run:
           name: "Save Hello World Context Output"
-          command: echo "text to output here" > output.txt 
+          command: echo "text to output here" > ~/output.txt 
       - persist_to_workspace: 
           root: ~/
           paths: 
@@ -24,7 +24,7 @@ jobs:
       
       - run: 
           name: "Print Output File" 
-          command: echo cat output.txt  
+          command: echo cat ~/output.txt  
        
 
 workflows:
