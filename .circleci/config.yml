@@ -69,8 +69,11 @@ jobs:
           command: echo cat output.txt  
       - attach_workspace:
           at: /age-game/.circleci   
+
   workflows:
     print-store-output-context:
       jobs:
         - save_hello_world_output
-        - print_output_file              
+        - print_output_file:
+            requires: 
+              - save_hello_world_output           
