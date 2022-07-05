@@ -68,7 +68,7 @@ jobs:
           name: "Print Output File" 
           command: echo cat output.txt  
       - attach_workspace:
-        at: /age-game/.circleci   
+          at: /age-game/.circleci   
   workflows:
     print-store-output-context:
       jobs:
