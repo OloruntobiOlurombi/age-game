@@ -10,7 +10,7 @@ jobs:
           name: "Save Hello World Context Output"
           command: echo "text to output here" > output.txt 
       - persist_to_workspace: 
-          root: /root
+          root: /age-game/.circleci 
           paths: 
             - output 
 
